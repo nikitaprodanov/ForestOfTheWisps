@@ -1,2 +1,0 @@
-# ForestOfTheWhisps
-posle shte opravim

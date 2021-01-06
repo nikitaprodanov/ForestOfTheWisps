@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f71873d28567547488c4d4431e74c460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openingDirection: 4
 --- !u!50 &2049936246447615376
 Rigidbody2D:
   serializedVersion: 4
@@ -137,6 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f71873d28567547488c4d4431e74c460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openingDirection: 3
 --- !u!50 &4834460894717017663
 Rigidbody2D:
   serializedVersion: 4
@@ -3862,7 +3864,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4448586496203782655}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 20, z: 0}
+  m_LocalPosition: {x: 0, y: 19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4448586496189673107}
@@ -3880,6 +3882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f71873d28567547488c4d4431e74c460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openingDirection: 1
 --- !u!50 &5280998464721993691
 Rigidbody2D:
   serializedVersion: 4
@@ -3954,7 +3957,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4448586496689516002}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -20, z: 0}
+  m_LocalPosition: {x: 0, y: -19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4448586496189673107}
@@ -3972,6 +3975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f71873d28567547488c4d4431e74c460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openingDirection: 2
 --- !u!50 &5787325612494001613
 Rigidbody2D:
   serializedVersion: 4

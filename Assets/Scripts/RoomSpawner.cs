@@ -29,17 +29,20 @@ public class RoomSpawner : MonoBehaviour
                 // Need to spawn a room with BOTTOM door
                 rand = Random.Range(0, templates.bottomRooms.Length);
                 Instantiate(templates.bottomRooms[rand], transform.position, templates.bottomRooms[rand].transform.rotation);
-            } else if (openingDirection == 2)
+            }
+            else if (openingDirection == 2)
             {
                 // Need to spawn a room with TOP door
                 rand = Random.Range(0, templates.topRooms.Length);
                 Instantiate(templates.topRooms[rand], transform.position, templates.topRooms[rand].transform.rotation);
-            } else if (openingDirection == 3)
+            }
+            else if (openingDirection == 3)
             {
                 // Need to spawn a room with LEFT door
                 rand = Random.Range(0, templates.leftRooms.Length);
                 Instantiate(templates.leftRooms[rand], transform.position, templates.leftRooms[rand].transform.rotation);
-            } else if (openingDirection == 4)
+            }
+            else if (openingDirection == 4)
             {
                 // Need to spawn a room with RIGHT door
                 rand = Random.Range(0, templates.rightRooms.Length);
@@ -52,9 +55,15 @@ public class RoomSpawner : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("SpawnPoint") && collision.GetComponent<RoomSpawner>().spawned == true)
+        if (collision.CompareTag("SpawnPoint"))
         {
-            Destroy(gameObject);
+            if (collision.GetComponent<RoomSpawner>().spawned == false && spawned == false)
+            {
+                // spawn a blocking wall
+                Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
+                Destroy(gameObject);
+            }
+            spawned = true;
         }
     }
 }

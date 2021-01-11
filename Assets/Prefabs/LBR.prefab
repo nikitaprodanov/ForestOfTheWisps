@@ -42,7 +42,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 586836292013760547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f71873d28567547488c4d4431e74c460, type: 3}
+  m_Script: {fileID: 11500000, guid: 81f29a7e22aee544084673309679ff97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 4
@@ -4508,7 +4508,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6492523697797725564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f71873d28567547488c4d4431e74c460, type: 3}
+  m_Script: {fileID: 11500000, guid: 81f29a7e22aee544084673309679ff97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 2
@@ -4649,7 +4649,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8444937488548412841}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f71873d28567547488c4d4431e74c460, type: 3}
+  m_Script: {fileID: 11500000, guid: 81f29a7e22aee544084673309679ff97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   openingDirection: 3
@@ -4700,3 +4700,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-1482994700769429128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12395, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: Palette Settings
+  m_EditorClassIdentifier: 
+  cellSizing: 0

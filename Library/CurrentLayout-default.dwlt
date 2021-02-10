@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 54
+  controlID: 33
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_MinSize: {x: 948, y: 492}
   m_MaxSize: {x: 22003, y: 14042}
   vertical: 0
-  controlID: 133
+  controlID: 81
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 75.47248
     speed: 2
-    m_Value: 75.61426
+    m_Value: 75.47248
   m_Ortho:
     m_Target: 1
     speed: 2

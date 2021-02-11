@@ -3890,6 +3890,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4448586496189673107}
   - component: {fileID: 4448586496189673106}
+  - component: {fileID: 8549170222054362332}
   m_Layer: 0
   m_Name: SpawnRoom
   m_TagString: Untagged
@@ -3930,6 +3931,31 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!68 &8549170222054362332
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4448586496189673109}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 9.170158, y: -9.079412}
+  - {x: 9.060261, y: -9.110752}
+  - {x: 9.105156, y: -1.0822735}
+  - {x: 10.051489, y: -1.0579512}
+  - {x: 10.068217, y: -9.9592905}
+  - {x: 1.0269194, y: -9.987929}
+  - {x: 1.0651616, y: -9.161468}
+  - {x: 8.975676, y: -9.001629}
+  - {x: 9.050825, y: -9.039371}
 --- !u!1 &4448586496203782655
 GameObject:
   m_ObjectHideFlags: 0

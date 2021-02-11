@@ -4,20 +4,49 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //Movement variables:
     public float movementSpeed = 5f;
     public Rigidbody2D rb;
     Vector2 movement;
     public Joystick joystick;
+
+    //Shooting variables:
+    public Transform firePoint;
+    public GameObject bullet;
+    public float bulletSpeed = 100f;
+    public float fireRate = 5f;
+    public float timer;
+
+    private void Start()
+    {
+        timer = fireRate;
+    }
 
     // Update is called once per frame
     void Update()
     {
         movement.x = joystick.Horizontal;
         movement.y = joystick.Vertical;
+
+        if (timer > 0)
+        {
+            timer -= Time.deltaTime;
+        } else
+        {
+            Shoot();
+            timer = fireRate;
+        }
     }
 
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * movementSpeed * Time.fixedDeltaTime);
+    }
+
+    void Shoot()
+    {
+        GameObject bulletClone = Instantiate(bullet, firePoint.position, firePoint.rotation);
+        Rigidbody2D bulletRigidBody = bulletClone.GetComponent<Rigidbody2D>();
+        bulletRigidBody.AddForce(firePoint.up * bulletSpeed * Time.deltaTime, ForceMode2D.Impulse);
     }
 }

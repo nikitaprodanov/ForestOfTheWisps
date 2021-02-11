@@ -27,19 +27,20 @@ public class PlayerController : MonoBehaviour
     {
         movement.x = joystick.Horizontal;
         movement.y = joystick.Vertical;
-
-        if (timer > 0)
-        {
-            timer -= Time.deltaTime;
-        } else
-        {
-            Shoot();
-            timer = fireRate;
-        }
     }
 
     private void FixedUpdate()
     {
+        if (timer > 0)
+        {
+            timer -= Time.deltaTime;
+        }
+        else
+        {
+            Shoot();
+            timer = fireRate;
+        }
+
         rb.MovePosition(rb.position + movement * movementSpeed * Time.fixedDeltaTime);
     }
 
@@ -47,6 +48,6 @@ public class PlayerController : MonoBehaviour
     {
         GameObject bulletClone = Instantiate(bullet, firePoint.position, firePoint.rotation);
         Rigidbody2D bulletRigidBody = bulletClone.GetComponent<Rigidbody2D>();
-        bulletRigidBody.AddForce(firePoint.up * bulletSpeed * Time.deltaTime, ForceMode2D.Impulse);
+        bulletRigidBody.AddForce(movement * bulletSpeed * Time.deltaTime, ForceMode2D.Impulse);
     }
 }

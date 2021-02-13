@@ -8,6 +8,7 @@ public class FireballController : MonoBehaviour
     public float lifetime;
     public float distance;
     public LayerMask whatIsSolid;
+    public float damage;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class FireballController : MonoBehaviour
         {
             if (hitInfo.collider.CompareTag("Enemy"))
             {
-                Debug.Log("ENEMY MUST TAKE DAMAGE");
+                hitInfo.collider.GetComponent<EnemyController>().TakeDamage(damage);
             }
             DestroyProjectile();
         }

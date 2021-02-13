@@ -3891,7 +3891,7 @@ GameObject:
   - component: {fileID: 4448586496189673107}
   - component: {fileID: 4448586496189673106}
   - component: {fileID: 8549170222054362332}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpawnRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4153,7 +4153,7 @@ GameObject:
   - component: {fileID: 4448586496832785455}
   - component: {fileID: 4448586496832785453}
   - component: {fileID: 4448586496832785452}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TilemapBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}

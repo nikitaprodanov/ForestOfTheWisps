@@ -117,3 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 1
+  distance: 0.5
+  whatIsSolid:
+    serializedVersion: 2
+    m_Bits: 768

@@ -5,11 +5,12 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public float health;
-    public float seenRange;
+    public float attackRange;
     public Rigidbody2D rb;
     public float speed;
     public Transform player;
-    public float range;
+    public float seenRange;
+    public float damage;
 
     private void Start()
     {
@@ -24,7 +25,16 @@ public class EnemyController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
         FollowPlayer();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
+        }
     }
 
     public void TakeDamage (float damage)
@@ -34,7 +44,7 @@ public class EnemyController : MonoBehaviour
 
     void FollowPlayer()
     {
-        if (Vector2.Distance(transform.position, player.position) < range)
+        if (Vector2.Distance(transform.position, player.position) < seenRange)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }

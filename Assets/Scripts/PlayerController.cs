@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float bulletSpeed = 100f;
     public float fireRate = 5f;
     public float timer;
+    public float health;
 
     private void Start()
     {
@@ -27,6 +28,11 @@ public class PlayerController : MonoBehaviour
     {
         movement.x = joystick.Horizontal;
         movement.y = joystick.Vertical;
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void FixedUpdate()
@@ -49,5 +55,10 @@ public class PlayerController : MonoBehaviour
         GameObject bulletClone = Instantiate(bullet, firePoint.position, firePoint.rotation);
         Rigidbody2D bulletRigidBody = bulletClone.GetComponent<Rigidbody2D>();
         bulletRigidBody.AddForce(movement * bulletSpeed * Time.deltaTime, ForceMode2D.Impulse);
+    }
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
     }
 }

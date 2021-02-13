@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5165397703933917701}
   - component: {fileID: 5574704683603331386}
   - component: {fileID: 1665540434924747143}
+  - component: {fileID: 7363222014065387330}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Untagged
@@ -103,3 +104,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7363222014065387330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5883884231471728577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2816b0b25991de04e8d4662c0a5004f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 1

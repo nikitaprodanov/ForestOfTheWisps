@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public float health;
-    public float attackRange;
     public Rigidbody2D rb;
     public float speed;
     public Transform player;

@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     public float bulletSpeed = 100f;
     public float fireRate = 5f;
     public float timer;
+
+    //Other variables
     public float health;
 
     private void Start()

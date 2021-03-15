@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 518
     height: 947
-  m_MinSize: {x: 242, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 240, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -97,10 +97,10 @@ MonoBehaviour:
     y: 0
     width: 233
     height: 947
-  m_MinSize: {x: 231, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 231, y: 471}
+  m_MaxSize: {x: 10001, y: 14021}
   vertical: 1
-  controlID: 64
+  controlID: 117
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -124,10 +124,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 951, y: 492}
-  m_MaxSize: {x: 22006, y: 14042}
+  m_MinSize: {x: 949, y: 471}
+  m_MaxSize: {x: 22004, y: 14021}
   vertical: 0
-  controlID: 122
+  controlID: 138
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,8 +173,8 @@ MonoBehaviour:
     y: 0
     width: 233
     height: 377
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -475,7 +475,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 36390000
     m_LastClickedID: 14646
-    m_ExpandedIDs: 000000000a3d00000c3d00000e3d0000103d0000123d0000143d0000163d0000183d00001a3d00001c3d00001e3d0000
+    m_ExpandedIDs: 000000001e3d0000203d0000223d0000243d0000263d0000283d00002a3d00002c3d00002e3d0000303d0000323d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -503,21 +503,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000000a3d00000c3d00000e3d0000103d0000123d0000143d0000163d0000183d00001a3d00001c3d00001e3d0000
+    m_ExpandedIDs: ffffffff000000001e3d0000203d0000223d0000243d0000263d0000283d00002a3d00002c3d00002e3d0000303d0000323d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: PortalController
-      m_OriginalName: PortalController
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 15952
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 3}
     m_SearchString: 
@@ -596,7 +596,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 564
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -628,7 +628,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 66d3ffff64fbffff
+      m_ExpandedIDs: 56efffff78efffff34f0ffff44fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

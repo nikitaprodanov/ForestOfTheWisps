@@ -22,10 +22,15 @@ public class RoomTemplates : MonoBehaviour
     private int rand;
     public GameObject portal;
 
+    private int randIceX;
+    private int randIceY;
+    public GameObject ice;
+
     private void Start()
     {
         Invoke("InstantiateBalls", waitTIme);
         Invoke("InstantiatePortals", waitTIme);
+        Invoke("InstantiateItems", waitTIme);
     }
 
     private void Update()
@@ -66,6 +71,24 @@ public class RoomTemplates : MonoBehaviour
                 Vector2 newPos = new Vector2(newX, newY);
 
                 Instantiate(portal, newPos, Quaternion.identity);
+            }
+        }
+    }
+
+    private void InstantiateItems()
+    {
+        for (int i = 0; i < rooms.Count; i++)
+        {
+            rand = Random.Range(0, 6);
+            if (rand == 3)
+            {
+                randIceX = Random.Range(-9, 9);
+                randIceY = Random.Range(-9, 9);
+                float newX = rooms[i].transform.position.x + randIceX;
+                float newY = rooms[i].transform.position.y + randIceY;
+                Vector2 newPos = new Vector2(newX, newY);
+
+                Instantiate(ice, newPos, Quaternion.identity);
             }
         }
     }

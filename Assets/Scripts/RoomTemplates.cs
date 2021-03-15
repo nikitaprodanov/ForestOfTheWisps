@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class RoomTemplates : MonoBehaviour
 {
@@ -15,6 +16,13 @@ public class RoomTemplates : MonoBehaviour
     public float waitTIme;
     private bool spawnedBoss = false;
     public GameObject boss;
+
+    public GameObject ball;
+
+    private void Start()
+    {
+        Invoke("InstantiateBalls", waitTIme);
+    }
 
     private void Update()
     {
@@ -31,6 +39,14 @@ public class RoomTemplates : MonoBehaviour
         } else
         {
             waitTIme -= Time.deltaTime;
+        }
+    }
+
+    private void InstantiateBalls()
+    {
+        for (int i = 0; i < rooms.Count; i++)
+        {
+            Instantiate(ball, rooms[i].transform.position, Quaternion.identity);
         }
     }
 }

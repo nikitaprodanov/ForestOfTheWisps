@@ -945,6 +945,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e7f6835cab486442a64bed152fc175d, type: 3}
+--- !u!1 &1886527340 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4448586496189673109, guid: 2e7f6835cab486442a64bed152fc175d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1886527339}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1886527341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886527340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9876bbacfdc1c174db53af785f3f777a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1988619884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1053,7 @@ MonoBehaviour:
   rooms: []
   waitTIme: 3
   boss: {fileID: 4710787906613346109, guid: 260fde05f18ef1e4e9812ec3a6be080b, type: 3}
+  ball: {fileID: 9135890816416609969, guid: edf50a0aafcdb7643ba64ad677ce2310, type: 3}
 --- !u!4 &2085340445
 Transform:
   m_ObjectHideFlags: 0

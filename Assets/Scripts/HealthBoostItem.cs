@@ -11,6 +11,7 @@ public class HealthBoostItem : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<PlayerController>().TakeDamage(-healthBoost);
+            Destroy(this.gameObject);
         }
     }
 }

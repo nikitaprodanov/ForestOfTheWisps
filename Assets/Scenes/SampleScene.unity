@@ -1032,6 +1032,9 @@ MonoBehaviour:
   - {fileID: 6642626033652979214, guid: 7e6c9f4f95204684d89dee63fe490957, type: 3}
   closedRoom: {fileID: 5894742403032869815, guid: 71ba8e8dab1f27f499c3efe5b68d7025,
     type: 3}
+  rooms: []
+  waitTIme: 3
+  boss: {fileID: 4710787906613346109, guid: 260fde05f18ef1e4e9812ec3a6be080b, type: 3}
 --- !u!4 &2085340445
 Transform:
   m_ObjectHideFlags: 0

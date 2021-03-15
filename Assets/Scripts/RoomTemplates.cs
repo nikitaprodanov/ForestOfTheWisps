@@ -26,11 +26,16 @@ public class RoomTemplates : MonoBehaviour
     private int randIceY;
     public GameObject ice;
 
+    private int randEnemyX;
+    private int randEnemyY;
+    public GameObject enemy;
+
     private void Start()
     {
         Invoke("InstantiateBalls", waitTIme);
         Invoke("InstantiatePortals", waitTIme);
         Invoke("InstantiateItems", waitTIme);
+        Invoke("InstantiateEnemies", waitTIme);
     }
 
     private void Update()
@@ -89,6 +94,24 @@ public class RoomTemplates : MonoBehaviour
                 Vector2 newPos = new Vector2(newX, newY);
 
                 Instantiate(ice, newPos, Quaternion.identity);
+            }
+        }
+    }
+
+    private void InstantiateEnemies()
+    {
+        for (int i = 0; i < rooms.Count; i++)
+        {
+            rand = Random.Range(0, 4);
+            for (int j = 0; j < rand; j++)
+            {
+                randEnemyX = Random.Range(-9, 9);
+                randEnemyY = Random.Range(-9, 9);
+                float newX = rooms[i].transform.position.x + randEnemyX;
+                float newY = rooms[i].transform.position.y + randEnemyY;
+                Vector2 newPos = new Vector2(newX, newY);
+
+                Instantiate(enemy, newPos, Quaternion.identity);
             }
         }
     }

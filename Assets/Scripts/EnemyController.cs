@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public int gainingScore = 20;
     public float health;
     public Rigidbody2D rb;
     public float speed;
@@ -22,6 +23,7 @@ public class EnemyController : MonoBehaviour
     {
         if (health <= 0)
         {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().GainScore(this.gainingScore);
             Destroy(gameObject);
         }
 

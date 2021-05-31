@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     //Other variables
     public float health;
     public GameOverScreen gameOverScreen;
+    public int score = 0;
 
     private void Start()
     {
@@ -34,8 +35,8 @@ public class PlayerController : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
             GameOver();
+            Destroy(gameObject);
         }
     }
 
@@ -68,6 +69,11 @@ public class PlayerController : MonoBehaviour
 
     public void GameOver()
     {
-        gameOverScreen.Setup();
+        gameOverScreen.Setup(this.score);
+    }
+
+    public void GainScore(int score)
+    {
+        this.score += score;
     }
 }

@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameOverScreen : MonoBehaviour
 {
-    public void Setup()
+    public Text pointsText;
+
+    public void Setup(int score)
     {
         gameObject.SetActive(true);
+        pointsText.text = score.ToString() + "points";
     }
 
     public void PlayAgain()

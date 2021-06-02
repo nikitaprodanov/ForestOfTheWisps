@@ -1,2 +1,2 @@
 # ForestOfTheWhisps
-posle shte opravim
+Our main hero is summoned in another world AGAIN!! To fight the demon king and his minions who have trapped all those wandering souls called wisps in an epic dungeon crawler adventure where players will encounter many different monsters, items to power them up, brain puzzling puzzles and an amazing pixel experience. Ofcourse let's not forget about the different bosses with hard hitting pattens to deal with. So join us now in Forest of The Wisps! (It has absolutely nothing to do with hair or anykind of hairstyle)
